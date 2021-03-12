@@ -1,7 +1,7 @@
 const scanManager = require('../../../services/scanManager');
 
-const scan = (req, res) => {
-  const result = scanManager(req, res);
+const scan = async (req, res) => {
+  const result = await scanManager(req, res);
   return result;
 };
 

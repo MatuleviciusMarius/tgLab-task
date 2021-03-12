@@ -1,5 +1,7 @@
+const store = require('../state/stateManager');
+
 const downloadState = (req, res) => {
-  return res.json({ rezultatas: 'downloadState daro savo dalyka' });
+  return res.json(store.getState());
 };
 
 module.exports = downloadState;

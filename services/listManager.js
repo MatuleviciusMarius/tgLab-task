@@ -1,5 +1,7 @@
+const store = require('../state/stateManager');
+
 const list = (req, res) => {
-  return res.json({ rezultatas: 'list daro savo dalyka' });
+  return store.getState();
 };
 
 module.exports = list;
